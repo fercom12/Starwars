@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>
+      Star Wars Pedia
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <h1>Star WarsPedia</h1>
+ <form #formulario="ngForm" (ngSubmit)="enviarForm(formulario)">
+
+  <ion-label>Ingresa el ID del personaje</ion-label>
+  <ion-input type="num" name="num" placeholder="Id" ngModel ></ion-input>
+  <ion-button type="submit" >
+    Iniciar busqueda 
+  </ion-button>
+
+ </form>
+
+ <ion-button (click)="especies()">
+   Click me
+ </ion-button>
+    <p> el personaje es={{respuestaST.name}}<p>
+    <P> Especie= </P>
+  
+
+
+</ion-content>
